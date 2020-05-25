@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    <h1>This is the more page</h1>
+{% endblock %}
+
+{% block body %}
+    <p style="font-size: 35px;">{{msg}}</p>
+    <a href="{{ url_for('index') }}">click to go back</a>
+{% endblock %}

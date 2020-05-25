@@ -1,0 +1,12 @@
+{% extends "template.html" %}
+
+{% block heading %}
+  <h1>Form handling with Flask</h1>
+{% endblock %}
+
+{% block body %}
+  <form action="{{ url_for('more') }}" method="post">
+    <input type="text" name="name" placeholder="please enter your name">
+    <button>Submit</button>
+  </form>
+{% endblock %}

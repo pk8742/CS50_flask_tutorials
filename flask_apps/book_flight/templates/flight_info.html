@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+ flight_info Page
+{% endblock %}
+
+{% block body %}
+  <h1>Information about a flight:</h1>
+  <ul>
+    <li>flight origin: {{flight.origin}}</li>
+    <li>flight destination: {{flight.dest}}</li>
+    <li>flight duration: {{flight.dur}}</li>
+  </ul>
+
+  <h1>Passangers:</h1>
+  <ul>
+    {% for passanger in passangers %}
+      <li>{{passanger.name}}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
